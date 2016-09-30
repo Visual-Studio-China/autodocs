@@ -4,7 +4,7 @@ $scriptPath = $MyInvocation.MyCommand.Path
 $rootFolder = Split-Path $scriptPath | Split-Path
 
 Push-Location $rootFolder
-
+md -Force "docfx"
 $docfxZip = "docfx\docfx.zip"
 $docfx = "docfx\"
 $docfxExeUrl = "https://github.com/dotnet/docfx/releases/download/v2.1.0-cli-alpha/docfx.cli.zip"
