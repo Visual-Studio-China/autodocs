@@ -1,0 +1,7 @@
+{
+	"repo": [{
+		"url": "https://github.com/Azure/elastic-db-tools",
+		"branch": "master",
+		"name": "elastic-db-tools"
+	}]
+}

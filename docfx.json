@@ -1,0 +1,75 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "**/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": "src/elastic-db-tools/Src/ElasticScale.Client"
+        }
+      ],
+      "dest": "api_ref/elastic-db-tools"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/toc.yml"
+        ],
+        "src": "api_ref",
+        "dest": "."
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "api_ref",
+        "dest": "."
+      },
+      {
+        "files": [
+          "index.md"
+        ],
+        "src": "api_index",
+        "dest": "."
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "breadcrumb"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "documentation",
+        "dest": "documentation"
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "api_doc/**/*.md"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "breadcrumb_path": "~/breadcrumb/toc.yml"
+    },
+    "dest": "_site",
+    "template": [
+      "docs.html"
+    ]
+  }
+}
