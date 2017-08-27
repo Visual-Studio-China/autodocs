@@ -8,6 +8,7 @@ items:
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ConnectionOptions
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingLockToken
+  - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingStatus
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping`1
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMappingCreationInfo`1
@@ -72,6 +73,11 @@ references:
   isExternal: false
   name: ConnectionOptions
   fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ConnectionOptions
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  isExternal: false
+  name: MappingOptions
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
 - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.BaseMappingUpdate`1
   parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
   isExternal: false

@@ -45,6 +45,8 @@
     name.vb: ListShardMap(Of TKey)
   - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingLockToken
     name: MappingLockToken
+  - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+    name: MappingOptions
   - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingStatus
     name: MappingStatus
   - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping`1

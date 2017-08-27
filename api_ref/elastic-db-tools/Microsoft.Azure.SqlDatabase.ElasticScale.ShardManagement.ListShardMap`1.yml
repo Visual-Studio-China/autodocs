@@ -17,6 +17,7 @@ items:
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.GetMappings(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.Shard)
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.LockMapping(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0},Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingLockToken)
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0})
+  - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0},Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions)
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOnline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0})
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.OpenConnectionForKey(`0,System.String)
   - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.OpenConnectionForKey(`0,System.String,Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ConnectionOptions)
@@ -845,6 +846,48 @@ items:
   - Public
   fullName.vb: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap(Of TKey).MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping(Of TKey))
   name.vb: MarkMappingOffline(PointMapping(Of TKey))
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0},Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions)
+  commentId: M:Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0},Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions)
+  id: MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0},Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions)
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1
+  langs:
+  - csharp
+  - vb
+  name: MarkMappingOffline(PointMapping<TKey>, MappingOptions)
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap<TKey>.MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping<TKey>, Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions)
+  type: Method
+  source:
+    remote:
+      path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
+      branch: master
+      repo: https://github.com/Azure/elastic-db-tools
+    id: MarkMappingOffline
+    path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
+    startLine: 490
+  assemblies:
+  - Microsoft.Azure.SqlDatabase.ElasticScale.Client
+  namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  summary: "\nMarks the specified mapping offline.\n"
+  example: []
+  syntax:
+    content: public PointMapping<TKey> MarkMappingOffline(PointMapping<TKey> mapping, MappingOptions options)
+    content.vb: Public Function MarkMappingOffline(mapping As PointMapping(Of TKey), options As MappingOptions) As PointMapping(Of TKey)
+    parameters:
+    - id: mapping
+      type: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{{TKey}}
+      description: Input point mapping.
+    - id: options
+      type: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+      description: Options for validation operations to perform on opened connection to affected shard.
+    return:
+      type: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{{TKey}}
+      description: An offline mapping.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap(Of TKey).MarkMappingOffline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping(Of TKey), Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions)
+  name.vb: MarkMappingOffline(PointMapping(Of TKey), MappingOptions)
 - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOnline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0})
   commentId: M:Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.ListShardMap`1.MarkMappingOnline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0})
   id: MarkMappingOnline(Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMapping{`0})
@@ -862,7 +905,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: MarkMappingOnline
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 509
+    startLine: 520
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -901,7 +944,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: UpdateMapping
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 541
+    startLine: 552
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -961,7 +1004,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: UpdateMapping
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 556
+    startLine: 567
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -1039,7 +1082,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: GetMappingLockOwner
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 591
+    startLine: 602
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -1078,7 +1121,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: LockMapping
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 622
+    startLine: 633
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -1135,7 +1178,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: UnlockMapping
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 655
+    startLine: 666
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -1192,7 +1235,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: UnlockMapping
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 685
+    startLine: 696
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -1245,7 +1288,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: Clone
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 736
+    startLine: 747
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -1279,7 +1322,7 @@ items:
       repo: https://github.com/Azure/elastic-db-tools
     id: CloneCore
     path: Src/ElasticScale.Client/ShardManagement/ShardMap/ListShardMap.cs
-    startLine: 756
+    startLine: 767
   assemblies:
   - Microsoft.Azure.SqlDatabase.ElasticScale.Client
   namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
@@ -2220,6 +2263,11 @@ references:
     fullName: TKey
   - name: )
     fullName: )
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  isExternal: false
+  name: MappingOptions
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
 - uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.PointMappingUpdate
   parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
   isExternal: false

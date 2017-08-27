@@ -1,0 +1,122 @@
+items:
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  commentId: T:Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  id: MappingOptions
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  children:
+  - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.None
+  - Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.Validate
+  langs:
+  - csharp
+  - vb
+  name: MappingOptions
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  type: Enum
+  source:
+    remote:
+      path: Src/ElasticScale.Client/ShardManagement/ShardMapper/IShardMapper.cs
+      branch: master
+      repo: https://github.com/Azure/elastic-db-tools
+    id: MappingOptions
+    path: Src/ElasticScale.Client/ShardManagement/ShardMapper/IShardMapper.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.SqlDatabase.ElasticScale.Client
+  namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  summary: "\nAllows users to specify operations such as validation, to perform \non the affected shard in the mapping.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum MappingOptions
+    content.vb: >-
+      <Flags>
+
+      Public Enum MappingOptions
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.None
+  commentId: F:Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.None
+  id: None
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.None
+  type: Field
+  source:
+    remote:
+      path: Src/ElasticScale.Client/ShardManagement/ShardMapper/IShardMapper.cs
+      branch: master
+      repo: https://github.com/Azure/elastic-db-tools
+    id: None
+    path: Src/ElasticScale.Client/ShardManagement/ShardMapper/IShardMapper.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.SqlDatabase.ElasticScale.Client
+  namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  summary: "\nNo operation will be performed on the affected shard.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.Validate
+  commentId: F:Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.Validate
+  id: Validate
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  langs:
+  - csharp
+  - vb
+  name: Validate
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions.Validate
+  type: Field
+  source:
+    remote:
+      path: Src/ElasticScale.Client/ShardManagement/ShardMapper/IShardMapper.cs
+      branch: master
+      repo: https://github.com/Azure/elastic-db-tools
+    id: Validate
+    path: Src/ElasticScale.Client/ShardManagement/ShardMapper/IShardMapper.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.Azure.SqlDatabase.ElasticScale.Client
+  namespace: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  summary: "\nValidation operations will be performed on affected shard.\nWhen a mapping is taken offline, connections to the affected\nshard will be killed in order to prevent inconsistent or \nincomplete results for queries directed against mappings \nbeing changed.\n"
+  example: []
+  syntax:
+    content: Validate = 1
+    return:
+      type: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  isExternal: false
+  name: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+- uid: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
+  parent: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement
+  isExternal: false
+  name: MappingOptions
+  fullName: Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.MappingOptions
